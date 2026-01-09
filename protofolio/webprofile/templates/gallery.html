@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% block title %}Gallery - My Portfolio{% endblock %}
+
+{% block content %}
+<!-- Gallery Section -->
+<section class="gallery-section py-5">
+    <div class="container">
+        <h1 class="text-center mb-5 fw-bold">My Work Gallery</h1>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4 gallery-item">
+                <div class="gallery-card position-relative overflow-hidden rounded shadow">
+                    <img src="../static/images/kegiatan1.jpeg" alt="Project 1" class="img-fluid w-100">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4 gallery-item">
+                <div class="gallery-card position-relative overflow-hidden rounded shadow">
+                    <img src="../static/images/kegiatan2.jpeg" alt="Project 2" class="img-fluid w-100">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4 gallery-item">
+                <div class="gallery-card position-relative overflow-hidden rounded shadow">
+                    <img src="../static/images/kegiatan3.jpeg" alt="Project 3" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

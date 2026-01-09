@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+{% block title %}Home - Biografi & Kontak{% endblock %}
+
+{% block content %}
+<!-- Biography Section -->
+<section class="biography-section py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4 text-center mb-4">
+                <img src="../static/images/rafi.jpeg" alt="Profile Photo" class="img-fluid rounded-circle shadow" style="max-width: 300px; border: 5px solid #007bff;">
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-5 fw-bold mb-4">Tentang Saya</h1>
+                <p class="lead text-muted mb-3">Selamat datang di portfolio saya!</p>
+                
+                <div class="bio-content">
+                    <h5 class="fw-bold text-primary mb-3">Biografi Singkat</h5>
+                    <p class="mb-3">
+                        Nama saya adalah <strong>Rafi Afrand</strong>, seorang <strong>Python Programmer Expert</strong> yang passionate dalam menciptakan solusi backend yang robust, scalable, dan inovatif. 
+                    </p>
+                    <p class="mb-3">
+                        Saya memiliki pengalaman lebih dari 6 tahun dalam mengembangkan aplikasi berbasis Python dengan fokus pada backend development, API development, dan data science. Dengan latar belakang pendidikan di bidang Teknik Informatika, saya telah berkontribusi pada berbagai proyek enterprise menggunakan framework seperti Django, FastAPI, Flask, dan tools modern seperti Docker, Kubernetes, serta Cloud services.
+                    </p>
+                    <p class="mb-3">
+                        Keahlian saya terutama dalam Python programming, sistem database, microservices architecture, dan automasi. Saya percaya bahwa kode yang baik bukan hanya tentang functionality, tetapi juga tentang maintainability, security, dan performance optimization. Setiap proyek yang saya tangani selalu dimulai dengan analisis mendalam dan best practices engineering.
+                    </p>
+                    <p class="mb-4">
+                        Ketika tidak sedang coding, Anda bisa menemukan saya sedang mengeksplorasi teknologi Python terbaru, berkontribusi pada proyek open-source, atau berbagi pengetahuan dengan komunitas developer tentang Python programming dan software engineering.
+                    </p>
+
+                    <h5 class="fw-bold text-primary mb-3">Keahlian & Spesialisasi</h5>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Python Programming (Expert Level)</li>
+                        <li class="list-group-item">Backend Development & API Design</li>
+                        <li class="list-group-item">Data Science & Data Engineering</li>
+                        <li class="list-group-item">Database Design & Optimization</li>
+                        <li class="list-group-item">DevOps & Cloud Deployment</li>
+                    </ul>
+
+                    <div class="d-flex gap-2">
+                        <a href="{% url 'about' %}" class="btn btn-primary">Lihat Detail Lengkap</a>
+                        <a href="{% url 'contact' %}" class="btn btn-outline-primary">Lihat Galeri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="gallery-preview-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Galeri Terbaru</h2>
+        <div class="text-center">
+            <p class="lead text-muted mb-4">Lihat beberapa karya terbaik saya di galeri</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">
+                <i class="fas fa-images me-2"></i>Lihat Galeri Lengkap
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
